@@ -1,0 +1,85 @@
+
+<html>
+<head>
+  <title>MedJet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+form {
+    border: 3px solid #f1f1f1;
+    font-family: sans-serif;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+        .textar{
+            width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+        }
+
+input[type=submit]{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+.sub:hover {
+    opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+.foot{
+        background-color: #f3e5f5;
+        padding: 20px;
+        }
+</style>
+</head>
+<body bgcolor="#05EC8E">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.php">MedJet</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.php">Home</a></li>
+      <li class="#"><a href="about.html">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <form id="form1" method="post" action="comment_verf.php">           
+            <label for="name">Name</label><br><input type="text" name="name" placeholder="your name" required>
+            <br><label for="email">Email</label><br><input type="email" name="email" placeholder="your email" required><br>
+            <textarea name="comment" class="textar" placeholder="Comments/FAQ's" minlength="15" form="form1" required></textarea><br>
+            <input type="submit" class="sub" value="Submit Comment">
+        </form>
+    </div>
+    </div>
+<footer id="foot"><div class="footer-content">
+    &copy;SSET, S5 CS1(2018-19)
+    </div></footer>
+</body>
+</html>
